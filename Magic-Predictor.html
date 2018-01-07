@@ -8,9 +8,9 @@
   <p id="responseArea"> </p>
   <button id="questionButton", class"questionButton", onclick="getResponse()">Click me if you have a question for Magic Predictor</button>
   <script type="text/javascript">
-    var response = ["yes.", "no.", "the odds are in your favour.", "the odds are not in your favour.", "try asking again.", "maybe.", "it's a secret.","it is certain.","concentrate and ask again.", "as I see it, yes."];
+    var response = ["yes.", "no.", "the odds are in your favour.", "the odds are not in your favour.", "try asking again.", "maybe.", "it's a secret.","it is certain.","concentrate and ask again.", "as I see it, yes.", "probably.", "probably not.", "reply hazy ask again later.","not likely"];
     function getResponse() {
-      var randomNum = Math.floor((Math.random() * 9) + 1);
+      var randomNum = Math.floor((Math.random() * 13) + 1);
       document.getElementById("responseArea").innerHTML = "Magic Predictor says: " + response[randomNum];
     }
   </script>
