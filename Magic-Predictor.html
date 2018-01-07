@@ -1,0 +1,17 @@
+<head>
+  <title>
+    Magic Predictor
+  </title>
+  <link rel="stylesheet" type="text/css" href="Magic-Predictor.css">
+</head>
+<body>
+  <p id="responseArea"> </p>
+  <button id="questionButton", class"questionButton", onclick="getResponse()">Click me if you have a question for Magic Predictor</button>
+  <script type="text/javascript">
+    var response = ["yes.", "no.", "the odds are in your favour.", "the odds are not in your favour.", "try asking again.", "maybe.", "it's a secret.","it is certain.","concentrate and ask again.", "as I see it, yes."];
+    function getResponse() {
+      var randomNum = Math.floor((Math.random() * 9) + 1);
+      document.getElementById("responseArea").innerHTML = "Magic Predictor says: " + response[randomNum];
+    }
+  </script>
+</body>

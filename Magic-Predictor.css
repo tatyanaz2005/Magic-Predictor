@@ -1,0 +1,14 @@
+body {
+  background-color: #873260;
+  text-align: center;
+  font-size: 30px;
+  color: #1d384f;
+}
+#questionButton {
+background-color: #705107;
+font-size: 30px;
+padding: 15px 32px;
+border: 2px solid #705107;
+display: inline-block;
+text-decoration: none;
+}
